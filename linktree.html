@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Saya</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blue+Ridge&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            background-image: url('backgorund.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+            background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh latar belakang */
+            background-position: center; /* Mengatur posisi gambar di tengah */
+            color: white;
+            text-align: center;
+            font-family: 'Blue Ridge', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 90%;
+            width: 400px;
+            margin-top: 50px;
+            background: rgba(0, 150, 136, 0.8); /* Sesuaikan warna ini agar cocok dengan background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 150, 136, 0.5); /* Bayangan juga disesuaikan */
+        }
+
+        .profile img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .btn-linktree {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #032a4c; /* Biru sesuai dengan warna pada background */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+            width: 100%;
+            border: 2px solid #FCB9C2; /* Biru lebih gelap untuk border */
+        }
+
+        .btn-linktree:hover {
+            background: #FCB9C2; /* Warna biru lebih gelap saat hover */
+            transform: scale(1.05);
+            border: 2px solid #032a4c;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                margin-top: 30px;
+                padding: 15px;
+            }
+            .profile img {
+                width: 80px;
+            }
+            .btn-linktree {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Muhammad Al-Faruq</h2>
+            <p>@RuQzy</p>
+        </div>
+        <a href="https://instagram.com/_alfaruq._" class="btn-linktree" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@ruuqfa" class="btn-linktree" target="_blank">TikTok</a>
+        <a href="https://wa.me/6281343039368" class="btn-linktree" target="_blank">WhatsApp</a>
+        <a href="https://github.com/RuQzyy" class="btn-linktree" target="_blank">GitHub</a>
+        <a href="https://eduplan.my.id" class="btn-linktree" target="_blank">Website</a>
+        <a href="https://drive.google.com/drive/folders/1Z50zJJubk1b1k-dIrUaBYpr9YIh3vonD?usp=drive_link" class="btn-linktree" target="_blank">Download Aplikasi</a>
+    </div>
+</body>
+</html>
